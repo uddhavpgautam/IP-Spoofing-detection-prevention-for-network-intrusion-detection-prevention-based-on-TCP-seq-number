@@ -1,0 +1,48 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'IPSpoofingServer.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iSVBTcG9vZmluZ1NlcnZlci5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5JUFNwb29maW5nU2VydmVyPC90aXRsZT4NCiAgICA8dmVuZG9yPkFkbWluaXN0cmF0b3I8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iSVBTcG9vZmluZ1NlcnZlci5qYXIiIHNpemU9IjExNTM2MyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpuZXRwY2FwLmphciIgc2l6ZT0iMzMyMTAyIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KPHNlY3VyaXR5Pg0KICA8YWxsLXBlcm1pc3Npb25zLz4NCjwvc2VjdXJpdHk+DQogIDxhcHBsaWNhdGlvbi1kZXNjIG1haW4tY2xhc3M9Imlwc3Bvb2ZpbmdTZXJ2ZXJTaWRlLlNlcnZlckludGVyZmFjZUlQU3Bvb2ZpbmciICBuYW1lPSJJUFNwb29maW5nU2VydmVyIiA+DQogIDwvYXBwbGljYXRpb24tZGVzYz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedipspoofingServerSide() {
+        dtjava.embed(
+            {
+                id : 'ipspoofingServerSide',
+                toolkit : 'swing',
+                url : 'IPSpoofingServer_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iSVBTcG9vZmluZ1NlcnZlcl9icm93c2VyLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPklQU3Bvb2ZpbmdTZXJ2ZXI8L3RpdGxlPg0KICAgIDx2ZW5kb3I+QWRtaW5pc3RyYXRvcjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJJUFNwb29maW5nU2VydmVyLmphciIgc2l6ZT0iMTE1MzYzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcam5ldHBjYXAuamFyIiBzaXplPSIzMzIxMDIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQo8c2VjdXJpdHk+DQogIDxhbGwtcGVybWlzc2lvbnMvPg0KPC9zZWN1cml0eT4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iaXBzcG9vZmluZ1NlcnZlclNpZGUuU2VydmVySW50ZXJmYWNlSVBTcG9vZmluZyIgIG5hbWU9IklQU3Bvb2ZpbmdTZXJ2ZXIiID4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedipspoofingServerSide);
+</script>
+
+</head><body>
+<h2>Test page for <b>IPSpoofingServer</b></h2>
+  <b>Webstart:</b> <a href='IPSpoofingServer.jnlp' onclick="return launchApplication('IPSpoofingServer.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
